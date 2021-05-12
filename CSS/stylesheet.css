@@ -6,11 +6,12 @@
 /* CSS für den Navigationsbereich*/
 #mynav {
     margin: 5px;
-    padding: 25px;
+    padding: 10px;
     background-color: rgb(171, 202, 238);
     position: absolute;
     top: 0;
     width: 100%;
+    position: fixed;
 }
 
 nav {
@@ -32,7 +33,16 @@ nav ol li a {
     text-decoration: none;
     font-size: 30px;
     color: black;
+}
 
+li a {
+    display: block;
+    padding: 10px 16px;
+}
+
+li a:hover {
+    background-color: indigo;
+    color: white;
 }
 
 
