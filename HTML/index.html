@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>Kochparadies</title>
+</head>
+<body>
+
+    <div id="mynav">
+        <nav>
+            <ol>
+                <li class="navi"><a href="index.html">Home</a></li>
+                <li class="navi"><a href="kochbuch.html">Kochbuch</a></li>
+                <li class="navi"><a href="angebot.html">Angebot</a></li>
+                <li class="navi"><a href="ueberUns.html">Über uns</a></li>
+                <li class="navi"><a href="kontakt.html">Kontakt</a></li>
+            </ol>
+        </nav>
+    </div>
+    
+
+    <!-- Hier beginnt der Body-Teil,
+         Der gesammte Text wird hier ausgegeben,
+         Sollen eigene Sections oder Divs in myBody generiert werden
+    -->
+    
+    <div id="myBody">
+
+        <div id="bodyLinks">
+            <h2> This is a JavaScript Test</h2>
+            <button onclick="displayHello()">Display Hello</button>
+            <p><button onclick="clearHello()">Clear Hello</button>
+
+            
+            <div id="btnText">
+
+            </div>
+        </div>
+
+
+        <script>
+            function displayHello() {
+                document.getElementById("btnText").innerHTML = "Hello";
+            }
+
+            function clearHello() {
+                document.getElementById("btnText").innerHTML = "";
+            }
+
+        </script>
+
+
+        <div id="bodyMitte">
+            <h2>This is a Cosmos bipinnatus Flower</h2>
+            <a href="https://en.wikipedia.org/wiki/Cosmos_bipinnatus"><img src="../Images/flower.jpg" alt="Picture of a flower" width="10%"></a>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+        <div id="myFooter">
+            <div id="myTextInFooter">Ella Froese, 2021 ©</div>
+        </div>
+    </footer>
+
+</body>
+</html>
