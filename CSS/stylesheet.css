@@ -100,6 +100,19 @@ li a:hover {
 }
 
 
+/* CSS für den Bodybereich --> ÜBER UNS Seite*/
+
+#bodyUeberUns {
+    margin:10px;
+    padding: 10px;
+    background-color: rgba(71, 54, 167, 0.596);
+    height: 60%;
+    width: 98.6%;
+}
+
+#SOLogo {
+    width: 20%;
+}
 
 
 
@@ -119,6 +132,8 @@ li a:hover {
 #myTextInFooter {
     text-align: right;
 }
+
+
 
 
 
