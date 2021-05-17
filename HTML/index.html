@@ -29,15 +29,17 @@
     
     <div id="myBody">
 
+       
+
         <div id="bodyLinks">
             <h2> This is a JavaScript Test</h2>
             <button onclick="displayHello()">Display Hello</button>
-            <p><button onclick="clearHello()">Clear Hello</button>
+            <p><button onclick="clearHello()">Clear Hello</button></p>
+            <p><button type="button" onclick="document.getElementById('dateTime').innerHTML = Date()">Display Date and Time</button></p>
 
             
-            <div id="btnText">
-
-            </div>
+            <div id="btnText"></div>
+            <div id="dateTime"></div>
         </div>
 
 
@@ -50,16 +52,26 @@
                 document.getElementById("btnText").innerHTML = "";
             }
 
+
         </script>
 
 
         <div id="bodyMitte">
             <h2>This is a Cosmos bipinnatus Flower</h2>
-            <a href="https://en.wikipedia.org/wiki/Cosmos_bipinnatus"><img src="../Images/flower.jpg" alt="Picture of a flower" width="10%"></a>
+            <a href="https://en.wikipedia.org/wiki/Cosmos_bipinnatus"><img src="../Images/flower.jpg" id="imgBlume" alt="Picture of a flower" width="10%"></a>
+            <p><button onclick="textAusgeben()">Beschreibung anzeigen</button></p>
 
+            <div id="btnBeschreibung">
+
+            </div>
 
         </div>
 
+        <script>
+            function textAusgeben() {
+                document.getElementById("btnBeschreibung").innerHTML = "Cosmos bipinnatus, commonly called the garden cosmos or Mexican aster, is a medium-sized flowering herbaceous plant in the daisy family Asteraceae, native to the Americas. The species and its varieties and cultivars are popular as ornamental plants in temperate climate gardens.";
+            }
+       </script>
 
 
     </div>
