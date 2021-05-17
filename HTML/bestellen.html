@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>Kochparadies</title>
+</head>
+<body>
+
+    <div id="mynav">
+        <nav>
+            <ol>
+                <li class="navi"><a href="index.html">Home</a></li>
+                <li class="navi"><a href="kochbuch.html">Kochbuch</a></li>
+                <li class="navi"><a href="angebot.html">Angebot</a></li>
+                <li class="navi"><a href="bestellen.html">Bestellen</a></li>
+                <li class="navi"><a href="kurse.html">Kurse</a></li>
+                <li class="navi"><a href="ueberUns.html">Über uns</a></li>
+                <li class="navi"><a href="kontakt.html">Kontakt</a></li>
+            </ol>
+        </nav>
+    </div>
+    
+
+    <!-- Hier beginnt der Body-Teil,
+         Der gesammte Text wird hier ausgegeben,
+         Sollen eigene Sections oder Divs in myBody generiert werden
+    -->
+    
+    <div id="myBody">
+
+       
+
+        <div id="bodyBestellen">
+            <h1>Was wollen Sie bestellen?</h1>
+            <h2>Die Angebote und deren Beschreibungen finden Sie unter dem Menüpunkt Angebot</h2>
+          
+            <!-- PHP Teil sollte hier hinkommen
+                 Mit Fomrular arbeiten-->
+
+            <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>" accept-charset="utf-8" method="post" action="formsend_1.php">
+            
+                <p><label for="name" class="bezeichnung">Name:</label>
+                    <input type="text" class="text" name="name" id="name">
+                <p><label for="vorname" class="bezeichnung">Vorname:</label>
+                    <input type="text" class="text" name="vorname" id="vorname">
+                <p><label for="email" class="bezeichnung">E-Mail:</label>
+                    <input type="email" class="text" name="email" id="email">
+
+                <fieldset>
+                    <legend>Ich möchte folgendes bestellen</legend>
+                    <label><input type="checkbox" name="infos[]" value="PHP" class="check-radio"> PHP</label><br>
+                    <label><input type="checkbox" name="infos[]" value="JavaScript" class="check-radio"> JavaScript</label><br>
+                    <label><input type="checkbox" name="infos[]" value="CSS" class="check-radio"> CSS</label>
+                </fieldset>
+                             
+                <fieldset>
+                    <legend>Ich abonniere den Newsletter</legend>
+                    <label><input type="radio" name="newsletter" value="ja" class=
+                    "check-radio"> ja</label><br>
+                    <label><input type="radio" name="newsletter" value="nein" class=
+                    "check-radio"> nein</label>
+                </fieldset>
+
+            </form>
+            <p><input type="submit" name="send" value="senden" class="button">
+
+        </div>
+
+        <script>
+            function mailSchreiben() {
+               window.open('mailto: email.email@test.ch') 
+            }
+        </script>
+
+    </div>
+
+
+    <footer>
+        <div id="myFooter">
+            <div id="myTextInFooter">Ella Froese, 2021 ©</div>
+        </div>
+    </footer>
+
+</body>
+</html>

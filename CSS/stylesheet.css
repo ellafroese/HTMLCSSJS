@@ -34,6 +34,7 @@ nav {
     display: inline-block;
 }
 
+
     /* Links im Nav Bereich */
 
 nav ol li a {
@@ -54,6 +55,10 @@ li a:hover {
     letter-spacing: 2px;
 }
 
+nav ol li ol li a {
+    text-decoration: none;
+
+}
 
 
 /* CSS für den Bodybereich --> Home Seite*/
@@ -64,7 +69,7 @@ li a:hover {
     position: absolute;
     left: 15px;
     top: 140px;
-    height: 100%;
+    height: 2000px;
     width: 98%;
 }
 
@@ -114,7 +119,27 @@ li a:hover {
     width: 20%;
 }
 
+/* CSS für den Bodybereich --> Bestellen Seite*/
 
+#bodyBestellen{
+    margin:10px;
+    padding: 10px;
+    background-color: rgba(64, 172, 182, 0.596);
+    height: 60%;
+    width: 98.6%;
+
+}
+
+
+/* CSS für den Bodybereich --> Kurse Seite*/
+
+#bodyKurse {
+    margin:10px;
+    padding: 10px;
+    background-color: rgba(136, 103, 212, 0.596);
+    height: 100%;
+    width: 98.6%;
+}
 
 
 /* CSS für den Footer */
