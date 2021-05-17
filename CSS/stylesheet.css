@@ -142,6 +142,46 @@ nav ol li ol li a {
 }
 
 
+/* CSS für den Bodybereich --> Kochbuch Seite*/
+
+#bodyKochbuch {
+    margin:10px;
+    padding: 10px;
+    background-color: rgba(211, 69, 156, 0.781);
+    height: 100%;
+    width: 98.6%;
+}
+
+#kochLinks{
+    text-decoration: none;
+    color: black;
+}
+
+#kochLinks:hover {
+    color: blanchedalmond;
+    letter-spacing: 4px;
+}
+
+#zuruek {
+    text-decoration: none;
+    color: black;
+}
+
+#zuruek:hover {
+    color: blanchedalmond;
+}
+
+#kochbuchBild {
+    position: relative;
+    
+}
+
+
+
+
+
+
+
 /* CSS für den Footer */
 #myFooter{
     width: 99.6%;
